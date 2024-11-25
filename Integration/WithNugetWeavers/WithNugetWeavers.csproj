@@ -5,7 +5,7 @@
   <ItemGroup>
     <PackageReference Include="Fody" Version="$(IntegrationVersion)" />
     <PackageReference Include="SampleWeaver.Fody" Version="$(IntegrationVersion)" />
-    <PackageReference Include="Virtuosity.Fody" Version="1.21.3" />
+    <PackageReference Include="Virtuosity.Fody" Version="3.1.2" />
   </ItemGroup>
   <Target Name="VerifyThereAreNoWeaversInOutput" AfterTargets="AfterBuild">
     <Error Condition="Exists('$(OutDir)Virtuosity.dll')"
